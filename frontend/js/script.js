@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://library-system-rwqb.onrender.com";
 
         async function fetchBooks(searchQuery = "") {
             try {

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Fetch user details from backend
     async function fetchUserProfile() {
-        const response = await fetch(`http://localhost:5000/profile/${userId}`);
+        const response = await fetch(`https://library-system-rwqb.onrender.com/profile/${userId}`);
         const data = await response.json();
         if (data.success) {
             document.getElementById("userName").innerText = data.data.name;
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             return;
         }
 
-        const response = await fetch(`http://localhost:5000/profile/update/${userId}`, {
+        const response = await fetch(`https://library-system-rwqb.onrender.com/profile/update/${userId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updateData),

@@ -14,7 +14,7 @@ function register() {
 
     spinner.style.display = "block";
 
-    fetch("http://localhost:5000/register", {
+    fetch("https://library-system-rwqb.onrender.com/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
