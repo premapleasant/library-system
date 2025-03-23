@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/student_dashboard.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="profile" onclick="goToProfile()">
+        <div class="profile-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <span id="studentName">User</span>
+      </div>
+
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+      <h2>Student Dashboard</h2>
+      <input
+        type="text"
+        id="searchBook"
+        placeholder="Search for books..."
+        onkeyup="loadBooks()"
+      />
+
+      <div class="book-list" id="bookList"></div>
+
+      <div id="notification" class="notification"></div>
+    </div>
+
+    <script src="./js/student_dashboard.js">
+      
+    </script>
+  </body>
+</html>

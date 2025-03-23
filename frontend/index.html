@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Library Management System</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <h1>Library System</h1>
+        <div class="nav-links">
+            <button id="loginBtn" onclick="location.href='login.html'">Login</button>
+            <button id="registerBtn" onclick="location.href='register.html'">Register</button>
+            <button id="logoutBtn" class="logout-btn" style="display: none;" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Search for Books</h2>
+        <input type="text" id="search" placeholder="Search books...">
+        <button onclick="searchBooks()" class="search-btn">Search</button>
+
+        <div class="books-container" id="bookResults"></div>
+    </div>
+
+    <script src="./js/script.js">
+        
+    </script>
+</body>
+</html>

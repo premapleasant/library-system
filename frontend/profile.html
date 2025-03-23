@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+
+<a href="student_dashboard.html" class="dashboard-link">⬅ Back</a>
+
+<div class="profile-container">
+    <div class="profile-pic">👤</div>
+    <h2 id="userName"></h2>
+    <div class="profile-info">
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    </div>
+
+    <form id="editProfileForm">
+        <label for="newName">New Name:</label>
+        <input type="text" id="newName" placeholder="Enter new name">
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" placeholder="Enter new password">
+
+        <label for="newEmail">New Email:</label>
+        <input type="email" id="newEmail" placeholder="Enter new email" />
+
+        <button type="submit">Update profile</button>
+    </form>
+
+    <p class="message" id="message"></p>
+</div>
+
+<script src="./js/profile.js">
+    
+</script>
+
+</body>
+</html>

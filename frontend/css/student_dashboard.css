@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #343a40;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar .profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: gray;
+    color: white;
+  }
+
+  .profile-icon i {
+    font-size: 18px;
+  }
+
+  .logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  #searchBook {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .book {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+
+  .book .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-right: 15px;
+  }
+
+  .book-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .book-info span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .borrow-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .borrow-btn:disabled,
+  .return-btn:disabled {
+    background-color: #ccc;
+  }
+
+  .return-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .notification.error {
+    background-color: #dc3545;
+  }

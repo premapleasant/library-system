@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login - Library Management System</title>
+       
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <div class="error-message" id="error-message"></div>
+        <div class="spinner" id="spinner"></div>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="./js/login.js">
+       
+    </script>
+
+</body>
+</html>
