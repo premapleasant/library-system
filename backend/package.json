@@ -2,7 +2,11 @@
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "dotenv": "^16.4.7",
+=======
+    "bcryptjs": "^3.0.2",
+>>>>>>> 6a39dd6987de1a0e21a29f66954c9309017911e9
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.0"
