@@ -7,18 +7,18 @@ const dotenv = require("dotenv")
 const app = express();
 app.use(express.json());
 app.use(cors());
-dotenv.config();
 
+dotenv.config()
 app.use("/", (req, res, next) => {
   console.log(req.method);
   next();
 });
 // Database Connection
 const db = mysql.createConnection({
-  host: process.env.MYSQL_HOST ,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
+  host: "localhost",
+  user: "root",
+  password: "PremaPleasant",
+  database: "library_management",
 });
 
 db.connect((err) => {
