@@ -17,8 +17,3 @@ A full-stack Library System built using Node.js, Express, MySQL, HTML, CSS, and 
 - **Database:** MySQL
 - **Deployment:** Netlify (Frontend), Render (Backend)
 
-## Installation
-
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/your-username/library-system.git
